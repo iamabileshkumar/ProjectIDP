@@ -1,0 +1,177 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SubscriptionMonitoringSys.MVC
+build_property.RootNamespace = SubscriptionMonitoringSys.MVC
+build_property.ProjectDir = C:\Abi\ProjectIDP\MVC\SubscriptionMonitoringSys.MVC\SubscriptionMonitoringSys.MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Abi\ProjectIDP\MVC\SubscriptionMonitoringSys.MVC\SubscriptionMonitoringSys.MVC
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Admin/Companies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29tcGFuaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Admin/CompanyDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29tcGFueURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Admin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Admin/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Feedback/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Feedback/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Feedback/ProjectFeedbacks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcUHJvamVjdEZlZWRiYWNrcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Feedback/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Home/_NotificationDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTm90aWZpY2F0aW9uRHJvcGRvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Notification/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Notification/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Project/AllProjectsInCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxBbGxQcm9qZWN0c0luQ29tcGFueS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Project/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Project/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Project/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Project/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/AllSubscriptionsInCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXEFsbFN1YnNjcmlwdGlvbnNJbkNvbXBhbnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/ProjectSubscriptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXFByb2plY3RTdWJzY3JpcHRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/RegisterByCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXFJlZ2lzdGVyQnlDb21wYW55LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Subscription/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Vic2NyaXB0aW9uXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/UserAuth/CompanyUserRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhcQ29tcGFueVVzZXJSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/UserAuth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/UserAuth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Abi/ProjectIDP/MVC/SubscriptionMonitoringSys.MVC/SubscriptionMonitoringSys.MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nze18qfw2u

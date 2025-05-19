@@ -1,0 +1,81 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.SubscriptionModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+<br />
+   
+<section class="sub-details">
+        <div class="right-container">
+            <h3 class="gradienttext">Subscription Details</h3>
+            <table>
+                @if(userRole == "Admin"){
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.SubscriptionId) :</td>
+                <td>
+                    @Html.DisplayFor(model => model.SubscriptionId)
+                </td>
+                </tr>
+                }
+                 @if(userRole == "Admin" || userRole=="company"){
+                <tr>
+                <td> @Html.DisplayNameFor(model => model.UserId) :</td>
+                <td>
+                    @Html.DisplayFor(model => model.UserId)
+                </td>
+                </tr>
+                 }
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.SubscriptionName) :</td>
+                <td>@Html.DisplayFor(model => model.SubscriptionName)</td>
+                </tr>
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.SubscriptionPrice) :</td>
+                <td>@Html.DisplayFor(model => model.SubscriptionPrice)</td>
+                </tr>
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.CategoryName) :</td>
+                <td>@Html.DisplayFor(model => model.CategoryName)</td>
+                </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.SubscriptionStartDate) :</td>
+                <td>@Html.DisplayFor(model => model.SubscriptionStartDate)</td>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.SubscriptionEndDate) :</td>
+                <td>@Html.DisplayFor(model => model.SubscriptionEndDate)</td>
+            </tr>
+             <tr>
+                <td>@Html.DisplayNameFor(model => model.Status) :</td>
+                <td>
+                        @if (Model.Status == "Active")
+                        {
+                        <p class="badge bg-success" style="font-size:18px;">@Html.DisplayFor(modelItem => modelItem.Status)</p>
+                        }
+                        @if (Model.Status == "Expired Soon")
+                        {
+                        <span class="badge bg-warning" style="font-size:18px;">@Html.DisplayFor(modelItem => modelItem.Status)</span>
+                        }
+                        @if (Model.Status == "Expired")
+                        {
+                        <p class="badge bg-danger" style="font-size:16px;">@Html.DisplayFor(modelItem => modelItem.Status)</p>
+                        }
+                </td>
+                
+            </tr>
+            <tr>
+                <td><a class="button-34" style="margin-left: 100px;" asp-controller="Subscription" asp-action="Update" asp-route-id="@Model.SubscriptionId">Update </a></td>
+
+                <td><a class="button-34"  asp-controller="Subscription" asp-action="Delete" asp-route-id="@Model.SubscriptionId">Delete </a></td>
+            </tr>
+            </table>
+        </div>
+</section>
+@section Styles {
+    <link rel="stylesheet" href="~/css/UserDetails.css" />
+   
+ }

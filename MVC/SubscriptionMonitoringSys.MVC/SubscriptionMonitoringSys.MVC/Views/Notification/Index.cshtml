@@ -1,0 +1,78 @@
+﻿@model IEnumerable<SubscriptionMonitoringSys.MVC.Models.NotificationModel>
+
+@{
+    ViewData["Title"] = "Manage Notifications";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+<section class="table__header">
+    <div class="header">
+        <h1>All Notifications</h1>
+    </div>
+    <div class="input-group">
+        <input type="search" placeholder="Search Data...">
+    </div>
+        @if (userRole == "Admin" || userRole == "company")
+        {
+            <a class="button-34" asp-controller="Notification" asp-action="Register">Send Notification</a>
+        }
+</section>
+<section class="table__body">
+    <table>
+        <thead>
+            <tr>
+                
+                
+                <th>
+                    Received Date
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    Received Time
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                @if (userRole == "Admin")
+                {
+                    <th> User Id <span class="icon-arrow">&UpArrow;</span></th>
+                }
+                <th>
+                    Type
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    Notification Message
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> @item.NotificationSentDate.ToShortDateString() </td>
+                    <td> @item.NotificationSentDate.ToShortTimeString() </td>
+                    
+                    @if (userRole == "Admin" )
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserId)
+                        </td>
+                    }
+                    <td> @Html.DisplayFor(modelItem => item.Type) </td>
+                    <td> @Html.DisplayFor(modelItem => item.NotificationMessage) </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Details.css" />
+ }

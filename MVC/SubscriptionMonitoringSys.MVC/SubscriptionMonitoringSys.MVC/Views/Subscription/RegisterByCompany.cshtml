@@ -1,0 +1,85 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.SubscriptionModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+
+
+<br />
+<div class="header">
+    <h1 class="fs-1">Register Subscription</h1>
+</div>
+
+<hr />
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <form asp-action="RegisterByCompany" class="p-4 rounded shadow" style="background-color: #f8f9fa;">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="pb-2">
+                        <div class="form-group">
+                            <label asp-for="UserId" class="control-label pb-2">User ID</label>
+                            <input asp-for="UserId" type="text" class="form-control pb-2" required />
+                            <span asp-validation-for="UserId" class="text-danger pb-2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pb-2">
+                        <div class="form-group">
+                            <label asp-for="SubscriptionName" class="control-label pb-2">Subscription Name</label>
+                            <input asp-for="SubscriptionName" class="form-control pb-2" required/>
+                            <span asp-validation-for="SubscriptionName" class="text-danger pb-2"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-2">
+                        <div class="form-group">
+                            <label asp-for="SubscriptionPrice" class="control-label pb-2">Subscription Price</label>
+                            <input asp-for="SubscriptionPrice" type="number" class="form-control pb-2" required />
+                            <span asp-validation-for="SubscriptionPrice" class="text-danger pb-2"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-2">
+                        <div class="form-group">
+                            <label asp-for="CategoryName" class="control-label pb-2">Category Name</label>
+                            <input asp-for="CategoryName" class="form-control pb-2" required />
+                            <span asp-validation-for="CategoryName" class="text-danger pb-2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 pb-2">
+                        <div class="form-group">
+                            <label asp-for="SubscriptionStartDate" class="control-label pb-2">Start Date</label>
+                            <input asp-for="SubscriptionStartDate" type="date" class="form-control pb-2" required />
+                            <span asp-validation-for="SubscriptionStartDate" class="text-danger pb-2"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pb-2">
+                        <div class="form-group">
+                            <label asp-for="SubscriptionEndDate" class="control-label pb-2">End Date</label>
+                            <input asp-for="SubscriptionEndDate" type="date" class="form-control pb-2" required />
+                            <span asp-validation-for="SubscriptionEndDate" class="text-danger pb-2"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group text-center">
+                    <input type="submit" value="Submit" class="button-34 mt-2" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script src="~/js/Register.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Register.css" />
+ }

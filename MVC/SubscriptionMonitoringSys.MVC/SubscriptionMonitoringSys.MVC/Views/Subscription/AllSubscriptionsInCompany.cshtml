@@ -1,0 +1,116 @@
+﻿@model IEnumerable<SubscriptionMonitoringSys.MVC.Models.SubscriptionModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+
+<section class="table__header">
+    <div class="header">
+        <h1>All Subscriptions</h1>
+    </div>
+    <div class="input-group">
+        <input type="search" placeholder="Search Data...">
+    </div>
+    @if(userRole != "Admin"){
+        @if (userRole == "company")
+        {
+            <a class="button-34" asp-controller="Subscription" asp-action="RegisterByCompany">Add Subscription</a>
+        }
+        @if (userRole == "User")
+        {
+            <a class="button-34" asp-controller="Subscription" asp-action="Register">Add Subscription</a>
+        }
+    }
+
+</section>
+<section class="table__body">
+    <table style="font-size:13px;">
+        <thead>
+            <tr>
+                @if (userRole == "company" || userRole == "Admin")
+                {
+                    <th> User ID <span class="icon-arrow">&UpArrow;</span></th>
+                }
+
+                <th> Subscription Name <span class="icon-arrow">&UpArrow;</span></th>
+                
+                <th>
+                    Category Name
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    Subscription Start Date
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+
+                <th> Subscription End Date <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Subscription Price <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                <th colspan="4">Show Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                var status = item.Status;
+                var SubscriptionId = item.SubscriptionId;
+                
+                <tr>
+                    @if (userRole == "company" || userRole=="Admin")
+                    {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    }
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SubscriptionName)
+                    </td>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryName)
+                    </td>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SubscriptionStartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SubscriptionEndDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SubscriptionPrice)
+                    </td>
+                    <td>
+                        @if (status == "Active")
+                        {
+                            <p class="badge bg-success" style="font-size:18px;">@Html.DisplayFor(modelItem => item.Status)</p>
+                        }
+                        @if (status == "Expired Soon")
+                        {
+                            <span class="badge bg-warning" style="font-size:18px;">@Html.DisplayFor(modelItem => item.Status)</span>
+                        }
+                        @if (status == "Expired")
+                        {
+                            <p class="badge bg-danger" style="font-size:16px;">@Html.DisplayFor(modelItem => item.Status)</p>
+                        }
+                    </td>
+
+                    <td><a asp-controller="Subscription" asp-action="Details" asp-route-id="@item.SubscriptionId">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Details.css" />
+ }
+

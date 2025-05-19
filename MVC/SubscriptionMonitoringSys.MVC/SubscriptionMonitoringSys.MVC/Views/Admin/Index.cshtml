@@ -1,0 +1,75 @@
+﻿@model IEnumerable<SubscriptionMonitoringSys.MVC.Models.UserModel>
+
+@{
+    ViewData["Title"] = "All Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+<section class="table__header">
+    <div class="header">
+        <h1>All Users</h1>
+    </div>
+    <div class="input-group">
+        <input type="search" placeholder="Search Data...">
+    </div>
+</section>
+<section class="table__body">
+    <table>
+        <thead>
+            <tr>
+                
+                @if (userRole == "Admin")
+                {
+                    <th> User Id <span class="icon-arrow">&UpArrow;</span></th>
+                }
+                <th>
+                    UserName
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    UserEmail
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    Role
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    UserCreatedAt
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>Show Details</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                @if (item.Role != "company" && item.Role != "Admin")
+                {
+                <tr>
+                    <td>
+                        @item.UserId
+                    </td>
+                    <td> @item.UserName </td>
+                    <td> @item.UserEmail</td>
+                    <td> @item.Role </td>
+
+                    <td> @item.UserCreatedAt.ToShortDateString() </td>
+
+                        <td class ="badge bg-info m-3"><a style="color:white;font-size:14px;" asp-controller="Admin" asp-action="Details" asp-route-id="@item.UserId">Details</a></td>
+                </tr>
+            }
+            }
+        </tbody>
+    </table>
+</section>
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Details.css" />
+ }

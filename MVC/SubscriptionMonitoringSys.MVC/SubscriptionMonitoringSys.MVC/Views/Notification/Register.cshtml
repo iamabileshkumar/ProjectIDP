@@ -1,0 +1,62 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.NotificationModel
+
+@{
+    ViewData["Title"] = "Send Notification";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+@if (userRole == "company" || userRole == "Admin")
+{
+    <br />
+    <div class="header">
+        <h1 class="fs-1">Notification</h1>
+    </div>
+
+    <hr />
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form asp-action="Register" class="p-4 rounded shadow" style="background-color: #f8f9fa;">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                        <div class="col-md-12 pb-2">
+                            <div class="form-group">
+                            <label asp-for="UserId" class="control-label pb-2">Project Id</label>
+                            <input asp-for="UserId" class="form-control pb-2" />
+                                <span asp-validation-for="UserId" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 pb-2">
+                            <div class="form-group">
+                            <label asp-for="NotificationMessage" class="control-label pb-2">Notification Message</label>
+                            <input asp-for="NotificationMessage" class="form-control pb-2" />
+                            <span asp-validation-for="NotificationMessage" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 pb-2">
+                            <div class="form-group">
+                            <label asp-for="Type" class="control-label pb-2">Type</label>
+                            <input asp-for="Type" class="form-control pb-2" />
+                            <span asp-validation-for="Type" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                    <span class="text-danger ms-3">@ViewBag.Message</span>
+                    <div class="form-group text-center">
+                        <input type="submit" value="Submit" class="button-34 mt-2" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Register.css" />
+ }

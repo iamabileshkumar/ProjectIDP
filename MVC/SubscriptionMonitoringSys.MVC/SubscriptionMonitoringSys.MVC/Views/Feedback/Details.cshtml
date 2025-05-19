@@ -1,0 +1,54 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.FeedbackModel
+
+@{
+    ViewData["Title"] = "Feedback Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+<br />
+
+
+    
+        <section class="sub-details">
+        <div class="right-container">
+            <h3 class="gradienttext">Subscription Details</h3>
+            <table>
+                @if(userRole == "Admin"){
+                <tr>
+                    <td>@Html.DisplayNameFor(model => model.FeedbackId) :</td>
+                    <td>
+                            @Html.DisplayFor(model => model.FeedbackId)
+                    </td>
+                </tr>
+                }
+                 @if(userRole == "Admin" || userRole=="company"){
+                <tr>
+                    <td> @Html.DisplayNameFor(model => model.UserId) :</td>
+                    <td>
+                        @Html.DisplayFor(model => model.UserId)
+                    </td>
+                </tr>
+                 }
+                <tr>
+                    <td>@Html.DisplayNameFor(model => model.FeedbackText) :</td>
+                    <td>@Html.DisplayFor(model => model.FeedbackText)</td>
+                </tr>
+                <tr>
+                    <td>@Html.DisplayNameFor(model => model.FeedbackRating) :</td>
+                    <td>@Html.DisplayFor(model => model.FeedbackRating)</td>
+                </tr>
+                <tr>
+                    <td>@Html.DisplayNameFor(model => model.FeedbackCreatedAt) :</td>
+                    <td>@Html.DisplayFor(model => model.FeedbackCreatedAt)</td>
+                </tr>
+           
+            </table>
+        </div>
+</section>
+@section Styles {
+    <link rel="stylesheet" href="~/css/UserDetails.css" />
+   
+ }

@@ -1,0 +1,49 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<section class="home">
+    <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <div class="form signup_form">
+            <form asp-action="Register">
+                <h2>Signup</h2>
+                <div class="input_box">
+                    <input asp-for="UserId" type="text" class="form-control" placeholder="Enter your UserId"  />
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="input_box">
+                    <input asp-for="UserName" class="form-control" type="text" placeholder="Enter your UserName"  />
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="input_box">
+                    <input asp-for="UserEmail" class="form-control" type="email" placeholder="Enter your Email"  />
+                    <i class="uil uil-envelope-alt email"></i>
+                </div>
+                <div class="input_box">
+                    <input asp-for="UserPassword" class="form-control" type="password" placeholder="Enter your password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                </div>
+                @if (!string.IsNullOrEmpty(ViewBag.ValidationMessage))
+                {
+                    <div class="alert alert-danger small p-1 mt-1 mb-0 ">
+                        @ViewBag.ValidationMessage
+                    </div>
+                }
+                <button class="button">Signup Now</button>
+                
+
+                <div class="login_signup">Already have an account? <a href="/UserAuth/Login" id="login">Login</a></div>
+            </form>
+            
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/RegisterUser.css" />
+ }

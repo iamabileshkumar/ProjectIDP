@@ -1,0 +1,90 @@
+﻿@model IEnumerable<SubscriptionMonitoringSys.MVC.Models.FeedbackModel>
+
+@{
+    ViewData["Title"] = "Manage Feedbacks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+<section class="table__header">
+    <div class="header">
+        <h1 >All Feedbacks</h1>
+    </div>
+    <div class="input-group">
+        <input type="search" placeholder="Search Data...">
+        </div>
+</section>
+<section class="table__body">
+    <table>
+        <thead>
+            <tr>
+                @if (userRole == "Admin")
+                {
+                    <th> Feedback Id <span class="icon-arrow">&UpArrow;</span></th>
+                }
+                    @if (userRole == "company"|| userRole == "Admin")
+                    {
+                    <th> User Id <span class="icon-arrow">&UpArrow;</span></th>
+                    }
+                <th>
+                    Date
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    Time
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    Feedback Text
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    Rating
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                @* <th> *@
+                @*     Show Details *@
+                    
+                @* </th> *@
+                @* <th> Status <span class="icon-arrow">&UpArrow;</span></th> *@
+                @* <th> Amount <span class="icon-arrow">&UpArrow;</span></th> *@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @if (userRole == "Admin")
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FeedbackId)
+                        </td>
+                    }
+                    @if (userRole == "Admin" || userRole == "company")
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserId)
+                        </td>
+                    }
+                    <td> @item.FeedbackCreatedAt.ToShortDateString() </td>
+                    <td> @item.FeedbackCreatedAt.ToShortTimeString() </td>
+                   
+                    
+                    <td> @Html.DisplayFor(modelItem => item.FeedbackText) </td>
+                    <td> @Html.DisplayFor(modelItem => item.FeedbackRating) </td>
+                    
+                    @* <td><a asp-controller="Feedback" asp-action="Details" asp-route-id="@item.FeedbackId">Details</a></td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Details.css" />
+ }
+

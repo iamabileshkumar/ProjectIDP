@@ -1,0 +1,104 @@
+﻿@model IEnumerable<SubscriptionMonitoringSys.MVC.Models.ProjectModel>
+
+@{
+    ViewData["Title"] = "All Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+
+<section class="table__header">
+    <div class="header">
+        <h1>All Projects</h1>
+    </div>
+    <div class="input-group">
+        <input type="search" placeholder="Search Data...">
+    </div>
+    @if (userRole != "Admin")
+    {
+        <a class="button-34" asp-controller="Project" asp-action="Register">Add Projects</a>
+    }
+</section>
+<section class="table__body">
+    <table style="font-size:13px;">
+        <thead >
+            <tr>
+                <th> ProjectId <span class="icon-arrow">&UpArrow;</span></th>
+                @if (userRole == "Admin")
+                {
+                    <th> User Id <span class="icon-arrow">&UpArrow;</span></th>
+                }
+                <th>
+                    ProjectName
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                <th>
+                    ProjectManagerName
+                    <span class="icon-arrow">&UpArrow;</span>
+                </th>
+                 
+                <th> Budget <span class="icon-arrow">&UpArrow;</span></th>
+                
+                <th> ProjectStartDate <span class="icon-arrow">&UpArrow;</span></th>
+                <th> ProjectEndDate <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                <th> Show Details <span class="icon-arrow"></span></th>
+            </tr>
+        </thead>
+        <tbody >
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProjectId)
+                    </td>
+                    @if(userRole == "Admin"){
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    }
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProjectName)
+                    </td>
+                    <td>
+                        @item.ProjectManagerName
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Budget)
+                    </td>
+                    
+                    <td>
+                        @item.ProjectStartDate.ToShortDateString()
+                    </td>
+                    <td>
+                        @item.ProjectEndDate.ToShortDateString()
+                    </td>
+                    <td>
+                        @if (item.Projectstatus == "Active")
+                        {
+                            <p class="badge bg-success" style="font-size:12px;">@item.Projectstatus</p>
+                        }
+                        @if (item.Projectstatus == "Completed")
+                        {
+                            <p class="badge bg-warning" style="font-size:12px;">@item.Projectstatus</p>
+                        }
+                        @if (item.Projectstatus == "Extended")
+                        {
+                            <p class="badge bg-danger" style="font-size:12px;">@item.Projectstatus</p>
+                        }
+                    </td>
+                    <td class="badge bg-info m-3"><a style = "color:white;font-size:12px;"asp-controller="Project" asp-action="Details" asp-route-id="@item.ProjectId">Details</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Details.css" />
+ }

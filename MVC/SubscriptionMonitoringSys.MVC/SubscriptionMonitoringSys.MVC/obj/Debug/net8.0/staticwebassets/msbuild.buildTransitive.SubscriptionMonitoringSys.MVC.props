@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SubscriptionMonitoringSys.MVC.props" />
+</Project>

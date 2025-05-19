@@ -1,0 +1,74 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.UserModel
+
+@{
+    ViewData["Title"] = "Company Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+<br />
+
+
+    
+        <section class="sub-details">
+        <div class="right-container">
+            <h3 class="gradienttext">Company Details</h3>
+            <table>
+            @if (userRole == "Admin" || userRole == "company")
+            {
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.UserId) :</td>
+                <td>
+                        @Html.DisplayFor(model => model.UserId)
+                </td>
+                </tr>
+                }
+                 
+                <tr>
+                <td> @Html.DisplayNameFor(model => model.UserName) :</td>
+                <td>
+                        @Html.DisplayFor(model => model.UserName)
+                </td>
+                </tr>
+                 
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.UserEmail) :</td>
+                <td>@Html.DisplayFor(model => model.UserEmail)</td>
+                </tr>
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.Role) :</td>
+                <td>@Html.DisplayFor(model => model.Role)</td>
+                </tr>
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.UserCreatedAt) :</td>
+                <td>@Html.DisplayFor(model => model.UserCreatedAt)</td>
+                </tr>
+            <tr>
+                <td style="display: inline-block;">
+                    <a class="button-34 mt-2" asp-controller="Admin" asp-action="Update" asp-route-id="@Model.UserId">Update</a>
+                </td>
+                <td style="display: inline-block;">
+                    <a class="button-34" asp-controller="Admin" asp-action="Delete" asp-route-id="@Model.UserId">Delete</a>
+                </td>
+
+                <td style="display: inline-block;">
+                    <a class="button-34" asp-controller="Project" asp-action="AllProjectsInCompany" asp-route-id="@Model.UserId">Projects</a>
+                </td>
+                
+                <td style="display: inline-block;">
+                    <a class="button-34" asp-controller="Subscription" asp-action="AllSubscriptionsInCompany" asp-route-id="@Model.UserId">Subscriptions</a>
+                </td>
+                <td>
+                    <a class="button-34" asp-controller="Feedback" asp-action="ProjectFeedbacks" asp-route-id="@Model.UserId">Feedbacks</a>
+                </td>
+
+            </tr>
+            </table>
+        </div>
+</section>
+@section Styles {
+    <link rel="stylesheet" href="~/css/UserDetails.css" />
+   
+ }

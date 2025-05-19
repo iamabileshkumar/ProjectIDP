@@ -1,0 +1,83 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.ProjectModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+@if (userRole == "company")
+{
+    <br />
+    <div class="header">
+        <h1 class="fs-1">Register Projects</h1>
+    </div>
+
+    <hr />
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <form asp-action="Register" class="p-4 rounded shadow" style="background-color: #f8f9fa;">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col-md-4 pb-2">
+                            <div class="form-group">
+                                <label asp-for="ProjectId" class="control-label pb-2">Project Id</label>
+                                <input asp-for="ProjectId" class="form-control pb-2" />
+                                <span asp-validation-for="ProjectId" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-2">
+                            <div class="form-group">
+                                <label asp-for="ProjectName" class="control-label pb-2">Project Name</label>
+                                <input asp-for="ProjectName" class="form-control pb-2" />
+                                <span asp-validation-for="ProjectName" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-2">
+                            <div class="form-group">
+                                <label asp-for="ProjectManagerName" class="control-label pb-2">Project Manager Name</label>
+                                <input asp-for="ProjectManagerName" class="form-control pb-2" />
+                                <span asp-validation-for="ProjectManagerName" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 pb-2">
+                            <div class="form-group">
+                                <label asp-for="Budget" class="control-label pb-2">Budget</label>
+                                <input asp-for="Budget" class="form-control pb-2" />
+                                <span asp-validation-for="Budget" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-2">
+                            <div class="form-group">
+                                <label asp-for="ProjectStartDate" class="control-label pb-2">Start Date</label>
+                                <input asp-for="ProjectStartDate" type="date" class="form-control pb-2" />
+                                <span asp-validation-for="ProjectStartDate" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-2">
+                            <div class="form-group">
+                                <label asp-for="ProjectEndDate" class="control-label pb-2">End Date</label>
+                                <input asp-for="ProjectEndDate" type="date" class="form-control pb-2" />
+                                <span asp-validation-for="ProjectEndDate" class="text-danger pb-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group text-center">
+                        <input type="submit" value="Submit" class="button-34 mt-2" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Register.css" />
+ }

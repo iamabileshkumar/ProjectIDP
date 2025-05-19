@@ -1,0 +1,176 @@
+﻿@{
+    var userRole = Context.Session.GetString("Role");
+    var UserId = Context.Session.GetString("UserId");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/SubscriptionMonitoringSys.MVC.styles.css" asp-append-version="true" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Index.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo_item">
+            <i class="bx bx-menu" id="sidebarOpen"></i>
+            <h1>Subscribo</h1>
+        </div>
+
+        <div class="navbar_content">
+            <i class="bi bi-grid"></i>
+            <i class='bx bx-sun' id="darkLight"></i>
+            <div class="dropdown">
+                <a data-mdb-dropdown-init class="dropdown-toggle hidden-arrow" id="navbarDropdownMenuLink"
+                   role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <i class='bx bx-bell'></i>
+                    <span class="badge rounded-pill badge-notification bg-danger" id="notificationCount">0</span>
+                </a>
+                <ul class="dropdown-menu" style="left: -301px;" aria-labelledby="navbarDropdownMenuLink" id="notificationList">
+                    <li class="show-all">
+                        <a class="dropdown-item" href="/Notification/Index">Show all notifications</a>
+                    </li>
+                </ul>
+            </div>
+            <input type="hidden" id="userId" value="@UserId" />
+            <img src="/images/Alex Gonley.jpg" alt="" class="profile" />
+        </div>
+    </nav>
+    <!-- sidebar -->
+    <nav class="sidebar">
+        <div class="menu_content">
+            
+            <ul class="menu_items">
+                
+               <li><br /></li>
+
+                <li class="item">
+                    <a href="/Home/Index" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bxs-dashboard'></i>
+                        </span>
+                        <span class="navlink">Dashboard</span>
+                    </a>
+                </li>
+                @if (userRole == "Admin")
+                {
+                    <li class="item">
+                        <a href="/Admin/Index" class="nav_link">
+                            <span class="navlink_icon">
+                                <i class='bx bxs-group'></i>
+                            </span>
+                            <span class="navlink">Users</span>
+                        </a>
+                    </li>
+                }
+                @if (userRole == "company")
+                {
+                    <li class="item">
+                        <a href="/Project/Index" class="nav_link">
+                            <span class="navlink_icon">
+                                <i class="bx bxs-magic-wand"></i>
+                            </span>
+                            <span class="navlink">Projects</span>
+                        </a>
+                    </li>
+                }
+                @if (userRole == "Admin")
+                {
+                    <li class="item">
+                        <a href="/Admin/Companies" class="nav_link">
+                            <span class="navlink_icon">
+                                <i class='bx bxs-business'></i>
+                            </span>
+                            <span class="navlink">Company</span>
+                        </a>
+                    </li>
+                }
+                
+               
+                <li class="item">
+                    <a href="/Subscription/Index" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bxs-calendar'></i>
+                        </span>
+                        <span class="navlink">Subscriptions</span>
+                    </a>
+                </li>
+                
+                <li class="item">
+                    <a href="/Feedback/Index" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bxs-message-square-dots'></i>
+                        </span>
+                        <span class="navlink">Feedbacks</span>
+                    </a>
+                </li>
+                
+                <li class="item">
+                    <a href="/Report/Index" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bxs-report'></i>
+                        </span>
+                        <span class="navlink">Reports</span>
+                    </a>
+                </li>
+                @if (userRole == "Admin" || userRole == "company")
+                {
+                    <li class="item">
+                        <a href="/Notification/Index" class="nav_link">
+                            <span class="navlink_icon">
+                                <i class='bx bxs-bell-ring'></i>
+                            </span>
+                            <span class="navlink">Notifications</span>
+                        </a>
+                    </li>
+                }
+                <li class="item">
+                    <a asp-area="" asp-controller="UserAuth" asp-action="Logout" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bxs-log-out'></i>
+                        </span>
+                        <span class="navlink">Logout</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Sidebar Open / Close -->
+            <div class="bottom_content">
+                <div class="bottom expand_sidebar">
+                    <span> Expand</span>
+                    <i class='bx bx-log-in'></i>
+                </div>
+                <div class="bottom collapse_sidebar">
+                    <span> Collapse</span>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </div>
+        </div> 
+    </nav>
+       
+    <div class="container">
+        <main role="main" class="main-content">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Notification.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="path/to/mdb.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    @await RenderSectionAsync("Styles", required: false)
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

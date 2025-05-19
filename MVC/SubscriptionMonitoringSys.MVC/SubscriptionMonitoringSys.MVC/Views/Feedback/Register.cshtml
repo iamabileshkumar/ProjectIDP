@@ -1,0 +1,53 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.FeedbackModel
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+@if(userRole == "company" || userRole=="User"){
+<div class="header">
+    <h1 class="fs-1">Register</h1>
+</div>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Register" class="p-4 rounded shadow " style="background-color: #f8f9fa;">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group pb-2">
+                <label asp-for="FeedbackText" class="control-label pb-2">Comments</label>
+                <input asp-for="FeedbackText" class="form-control pb-2" placeholder="Enter your feedback" required/>
+                <span asp-validation-for="FeedbackText" class="text-danger pb-2"></span>
+            </div>
+            
+            <div class="form-group pb-2">
+                <label asp-for="FeedbackRating" class="control-label pb-2">Ratings</label><br />
+                <div>
+                    @for (int i = 0; i <= 5; i++)
+                    {
+                        <label class="ps-lg-2">
+                            <input type="radio" asp-for="FeedbackRating" value="@i"/> @i
+                        </label>
+                        
+                    }
+                </div>
+                <span asp-validation-for="FeedbackRating" class="text-danger"></span>
+            </div>
+            <div class="form-group text-center">
+                <input type="submit" value="Submit" class="button-34 mt-2"  />
+            </div>
+        </form>
+    </div>
+</div>
+}
+
+
+@section Scripts {
+    <script src="~/js/Table.js"></script>
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/Details.css" />
+ }
+ 

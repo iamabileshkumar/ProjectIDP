@@ -1,0 +1,309 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SubscriptionMonitoringSys.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SubscriptionMonitoringSys.MVC.ur7j0nujpk.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\css\\Details.css",
+      "PackagePath": "staticwebassets\\css\\Details.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\css\\RegisterUser.css",
+      "PackagePath": "staticwebassets\\css\\RegisterUser.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\css\\UserDetails.css",
+      "PackagePath": "staticwebassets\\css\\UserDetails.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\images\\Alex Gonley.jpg",
+      "PackagePath": "staticwebassets\\images\\Alex Gonley.jpg"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\images\\export.png",
+      "PackagePath": "staticwebassets\\images\\export.png"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\js\\Notification.js",
+      "PackagePath": "staticwebassets\\js\\Notification.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\js\\Table.js",
+      "PackagePath": "staticwebassets\\js\\Table.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Abi\\ProjectIDP\\MVC\\SubscriptionMonitoringSys.MVC\\SubscriptionMonitoringSys.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SubscriptionMonitoringSys.MVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SubscriptionMonitoringSys.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SubscriptionMonitoringSys.MVC.props",
+      "PackagePath": "build\\SubscriptionMonitoringSys.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SubscriptionMonitoringSys.MVC.props",
+      "PackagePath": "buildMultiTargeting\\SubscriptionMonitoringSys.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SubscriptionMonitoringSys.MVC.props",
+      "PackagePath": "buildTransitive\\SubscriptionMonitoringSys.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

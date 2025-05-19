@@ -1,0 +1,12 @@
+﻿@model IEnumerable<NotificationModel>
+
+@foreach (var notification in Model)
+{
+    <li>
+        <a class="dropdown-item">@notification.NotificationMessage</a>
+    </li>
+}
+<li>
+    <a class="dropdown-item" href="#">Show all notifications</a>
+</li>
+

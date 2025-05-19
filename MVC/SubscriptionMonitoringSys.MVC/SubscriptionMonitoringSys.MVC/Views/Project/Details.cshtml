@@ -1,0 +1,81 @@
+﻿@model SubscriptionMonitoringSys.MVC.Models.ProjectModel
+
+@{
+    ViewData["Title"] = "Project Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var userRole = Context.Session.GetString("Role");
+}
+<br />
+<br />
+<br />
+<br />
+
+
+    
+        <section class="sub-details">
+        <div class="right-container">
+            <h3 class="gradienttext">Project Details</h3>
+            <table>
+            @if (userRole == "Admin" || userRole == "company")
+            {
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.ProjectId) :</td>
+                <td>
+                        @Html.DisplayFor(model => model.ProjectId)
+                </td>
+                </tr>
+                }
+                 @if(userRole == "Admin" ){
+                <tr>
+                <td> @Html.DisplayNameFor(model => model.UserId) :</td>
+                <td>
+                    @Html.DisplayFor(model => model.UserId)
+                </td>
+                </tr>
+                 }
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.ProjectName) :</td>
+                <td>@Html.DisplayFor(model => model.ProjectName)</td>
+                </tr>
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.ProjectManagerName) :</td>
+                <td>@Html.DisplayFor(model => model.ProjectManagerName)</td>
+                </tr>
+                <tr>
+                <td>@Html.DisplayNameFor(model => model.ProjectStartDate) :</td>
+                <td>@Html.DisplayFor(model => model.ProjectStartDate)</td>
+                </tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.ProjectEndDate) :</td>
+                <td>@Html.DisplayFor(model => model.ProjectEndDate)</td>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.Budget) :</td>
+                <td>@Html.DisplayFor(model => model.Budget)</td>
+            </tr>
+             <tr>
+                <td>@Html.DisplayNameFor(model => model.Projectstatus) :</td>
+                <td>@Html.DisplayFor(model => model.Projectstatus)</td>
+                
+            </tr>
+            <tr>
+                <td style="display: inline-block;">
+                    <a class="button-34 mt-2" asp-controller="Project" asp-action="Update" asp-route-id="@Model.ProjectId">Update</a>
+                </td>
+                <td style="display: inline-block;">
+                    <a class="button-34" asp-controller="Project" asp-action="Delete" asp-route-id="@Model.ProjectId">Delete</a>
+                </td>
+                <td style="display: inline-block;">
+                    <a class="button-34" asp-controller="Subscription" asp-action="ProjectSubscriptions" asp-route-id="@Model.ProjectId">Subscriptions</a>
+                </td>
+                <td style="display: inline-block;">
+                    <a class="button-34" asp-controller="Feedback" asp-action="ProjectFeedbacks" asp-route-id="@Model.ProjectId">Feedbacks</a>
+                </td>
+
+            </tr>
+            </table>
+        </div>
+</section>
+@section Styles {
+    <link rel="stylesheet" href="~/css/UserDetails.css" />
+   
+ }
